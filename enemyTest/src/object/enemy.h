@@ -12,15 +12,19 @@ struct Status
 
 enum class EnemyID
 {
-	
+	ENEMY_01,
+	ENEMY_02, 
+	ENEMY_03,
+	MAX_ENEMY
 };
 
 class Enemy
 {
 
-
+	Status state;
 
 public:
+
 
 
 };
