@@ -20,8 +20,6 @@ enum class EnemyID
 
 class Enemy
 {
-
-
 protected:
 
 	Status state;
@@ -43,16 +41,11 @@ public:
 		hp = 100;
 		state.size = Vec2f(32, 32);
 	}
-
-	
-	//void setpos(Vec2f newpos) { state.pos = newpos; }
 	void draw() { drawFillBox(state.pos.x(), state.pos.y(), state.size.x(), state.size.y(), Color::blue); }
 };
 
 class Dragon : public Enemy
 {
-
-
 public:
 
 	Dragon()
@@ -65,8 +58,6 @@ public:
 };
 
 #define ENEMY_LIST 3
-
-
 Enemy *enemy[ENEMY_LIST] =
 {
 	new Slime,
